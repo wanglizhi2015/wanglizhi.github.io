@@ -1,3 +1,53 @@
+
+#home{
+background-color: #f6f8fa!important;
+}
+#main{
+background-color: unset;
+}
+#header{
+background-color: #24292e;
+color: hsla(0,0%,100%,.75);
+padding-bottom: 11px;
+padding-top: 11px;
+z-index: 32;
+}
+#navList li a{
+background-color: #24292e;
+}
+#navList li a:hover{
+background-color: #24292e;
+color: #bcbcbc;
+}
+#sideBar{
+padding-top: 0px;
+display: inline-block;
+background-color: white;
+box-shadow: 1px 0px 6px #999;
+margin-left: 3px;
+}
+#sidebar_search{
+display: none;
+}
+#author_profile{
+display: none;
+}
+#green_channel{
+float: left;
+}
+#div_digg{
+float: right;
+}
+#ad_text_under_commentbox, #ad_t2, #opt_under_post, #cnblogs_c1, #under_post_news, #cnblogs_c2, #under_post_kb{
+display: none;
+}
+.day{
+padding-bottom: 0px;
+}
+.dayTitle{
+display: none;
+}
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/wanglizhi2015/wanglizhi.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
