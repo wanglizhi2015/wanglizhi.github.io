@@ -16,14 +16,14 @@ highlighter: rouge
 cover_color: slate
 
 # The blog button should not be removed.
-blog_button:
-    title: 博客
-    description: 访问博客
+# blog_button:
+#     title: 博客
+#     description: 访问博客
 
 tag_button:
     title: 分类
     description: 技术文章分类
-    url: 'https://wanglizhi2015.github.io/tag/'  
+    #url: 'https://wanglizhi2015.github.io/tag/'  
 
 # Navigation buttons in the front page.
 nav:
@@ -51,4 +51,3 @@ ga:
      id: UA-142143336-1
      host: auto
 
-     
