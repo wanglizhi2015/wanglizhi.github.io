@@ -1,6 +1,5 @@
 # my tech blog
-https://limeii.github.io/
-
+https://wanglizhi2015.github.io/
 
 # usage
 If you want to bootstrap this code in your local, here is the cmd (macOS):
