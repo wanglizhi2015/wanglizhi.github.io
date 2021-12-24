@@ -4,5 +4,5 @@ tags: blog
 layout: post
 ---
 
-**java后端系列：**
-- [java基础](https://wanglizhi2015.github.io/2021/06/java-base/)
+**Java系列：**
+- [Java：Java8-Stream的常用操作](https://wanglizhi2015.github.io/2018/06/java-java8stream/)
