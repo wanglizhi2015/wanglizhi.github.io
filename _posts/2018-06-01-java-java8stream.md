@@ -4,7 +4,7 @@ tags: Java8
 layout: post
 ---
 
-## 1、List&lt;Map>中的的某个key字段值转换成以逗号分隔的字符串
+### List&lt;Map>中的的某个key字段值转换成以逗号分隔的字符串
 ```java
     public static void convertListMapToStringJoiningComma(){
         List<Map<String,String>> list = new ArrayList<>();
@@ -20,8 +20,8 @@ layout: post
 
 ```
 
-## 2. 将List&lt;Map>中的某个key字段值相同的Map去重
-### 方法1：
+### 将List&lt;Map>中的某个key字段值相同的Map去重
+#### 方法1：
 ```java
     public static void distinctListMapByKey(){
         List<Map<String, String>> list = new ArrayList<>() ;
@@ -42,7 +42,7 @@ layout: post
     }
 
 ```
-### 方法2：
+#### 方法2：
 ```java
     public static void distinctListMapByKey(){
         List<Map<String, String>> list = new ArrayList<>() ;
@@ -65,7 +65,7 @@ layout: post
     }
 ```
 
-## 3. 将List&lt;Map>中的某个key字段值相同的Map对象分组
+### 将List&lt;Map>中的某个key字段值相同的Map对象分组
 ```java
     public static void groupListMapByKey(){
         List<Map<String, String>> list = new ArrayList<>() ;
@@ -90,7 +90,7 @@ layout: post
     }
 ```
 
-## 4. 提取List&lt;Map>中的某个key字段值转换成List&lt;String>并去重
+### 提取List&lt;Map>中的某个key字段值转换成List&lt;String>并去重
 ```java
     public static void convertListMapToListWithDistinct (){
         List<Map<String,String>> list = new ArrayList<>();
@@ -109,7 +109,7 @@ layout: post
     }
 ```
 
-## 5. 对List&lt;Map>中的某个key字段值求和
+### 对List&lt;Map>中的某个key字段值求和
 ```java
     public static void listMapKeySum (){
         List<Map<String,Integer>> list = new ArrayList<>();
