@@ -4,6 +4,18 @@ tags: Java8
 layout: post
 ---
 
+### List&lt;String>转换成以逗号分隔的字符串
+```java
+    public static void convertListMapToStringJoiningComma(){
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.stream().map(String::valueOf).collect(Collectors.joining(","));
+        // 输出结果：1,2
+    }
+
+```
+
 ### List&lt;Map>中的的某个key字段值转换成以逗号分隔的字符串
 ```java
     public static void convertListMapToStringJoiningComma(){
