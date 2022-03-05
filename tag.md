@@ -6,3 +6,7 @@ layout: post
 
 **Java系列：**
 - [Java：Java8-Stream的常用操作](https://wanglizhi2015.github.io/2018/06/java-java8stream/)
+
+
+**Angular系列：**
+- [Angular：angular集成dhtmlx-gantt甘特图](https://wanglizhi2015.github.io/2018/06/angular-dhtmlx-gantt.md/)
