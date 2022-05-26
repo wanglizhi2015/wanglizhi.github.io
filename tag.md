@@ -25,3 +25,4 @@ layout: post
 
 **Mysql系列：**
 - [mysql备份：windows 脚本定时备份](https://wanglizhi2015.github.io/2018/06/mysql-windows-bak/)
+- [mysql安装：centos离线安装mysql8.0.28](https://wanglizhi2015.github.io/2018/06/mysql-8.0.28-centos-install/)
