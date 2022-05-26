@@ -22,3 +22,6 @@ layout: post
 - [漏洞1：CVE-2016-2183、CVE-2013-2566、CVE-2015-2808漏洞修复方案](https://wanglizhi2015.github.io/2018/06/security-1/)
 - [漏洞2：【绿盟科技】检测到目标主机可能存在缓慢的HTTP拒绝服务攻击漏洞修复方案](https://wanglizhi2015.github.io/2018/06/security-2/)
 - [漏洞3：检测到目标URL存在httphost头攻击漏洞修复方案](https://wanglizhi2015.github.io/2018/06/security-3/)
+
+**Mysql系列：**
+- [mysql备份：windows 脚本定时备份](https://wanglizhi2015.github.io/2018/06/mysql-windows-bak/)
