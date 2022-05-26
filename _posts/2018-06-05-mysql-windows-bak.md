@@ -18,11 +18,11 @@ cd \
 ```
 
 #### 2、 windows窗口 win+r 打开运行窗口,输入：compmgmt.msc,如下图所示：
-![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/1.jpg )
+![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/1.png )
 #### 3、 系统工具->任务计划程序->任务计划程序库->右键创建任务
 ![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/2.jpg )
 #### 4、 常规->勾选->不管用户是否登录都要运行
-![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/3.jpg )
+![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/3.png )
 #### 5、 触发器->新建->设置定时任务执行时间和频次
 ![mysqlWindows备份步骤]( https://wanglizhi2015.github.io/assets/images/posts/mysql-win-bak/4.jpg )
 #### 6、 操作->新建->选择第一步新建的bat脚本->确定
