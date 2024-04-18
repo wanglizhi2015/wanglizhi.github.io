@@ -484,7 +484,7 @@ public void addFilterMap(FilterMap filterMap) {
 
 费了一番功夫，终于把这个filterMap给搞明白了。那么，再回头看下createFilterChain方法中被我们忽视的一些细节
 
-- 获取过滤器配置对象
+获取过滤器配置对象
 
 ```java
 ApplicationFilterConfig filterConfig = (ApplicationFilterConfig) context.findFilterConfig(filterMaps[i].getFilterName()); // 说到底，还是根据过滤器名从容器中获取
@@ -499,7 +499,7 @@ public FilterConfig findFilterConfig(String name) {
 
 ```
 
-- 添加过滤器配置对象到过滤器链中
+添加过滤器配置对象到过滤器链中
 
 ```java
 filterChain.addFilter(filterConfig); // 添加过滤器配置对象
