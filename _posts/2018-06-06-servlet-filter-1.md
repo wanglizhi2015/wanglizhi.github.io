@@ -264,7 +264,7 @@ public class MyFilter implements Filter {
 换句话说，其实就是为了根据配置信息去创建过滤器配置对象，并初始化它的过滤器定义对象和真正的过滤器对象，最后将它加入到容器的过滤器配置映射表中去。
 
 为了加深对Filter初始化部分的源码理解，送出下图
-![alt text](../assets/images/servlet/filter/filter-2.png)
+![](https://wanglizhi2015.github.io/assets/images/servlet/filter/filter-2.png)
 2. 执行部分
 了解完Filter的初始化，说明在后端程序中已经存在有相应的过滤器了（Tomcat自带的，我们自定义的）。那么当请求访问到达后端的时候，Filter是如何工作的？
 
