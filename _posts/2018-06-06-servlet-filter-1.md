@@ -1,9 +1,13 @@
-# Filter过滤器源码解析
+---
+title: Filter过滤器源码解析
+tags: 过滤器
+layout: post
+---
 
 ## 什么是Filter
 本文所说的Filter是JavaWeb中常见常使用的过滤器。Filter的作用是拦截前端发送给后端的请求，一般是用于权限过滤、日志记录、图片转换、加密、数据压缩等操作。
 大致流程如下图所示：
-![alt text](../assets/images/servlet/filter/filter-1.png)
+![](https://wanglizhi2015.github.io/assets/images/servlet/filter/filter-1.png)
 
 
 ### 初步了解Filter接口
@@ -632,7 +636,7 @@ public class MyFilter implements Filter {
 说到底，其实这个过滤器执行阶段的话，就是首先通过过滤器链工厂创建过滤器链对象。然后根据配置信息的过滤器名和过滤路径，从容器中获取对应的过滤器配置对象，并将其加入到过滤器链对象中的过滤器数组中，最后将执行数组中包含的所有过滤器对象的doFilter方法。
 
 最后为了加深理解，再基于第二阶段的源码分析，送出一图
-![alt text](../assets/images/servlet/filter/filter-3.png)
+![](https://wanglizhi2015.github.io/assets/images/servlet/filter/filter-3.png)
 那么本文的再最后说一个细节，就是在过滤器的doFilter方法如果需要执行下一个过滤器的话，必须要调用 chain.doFilter(request, response) 。
 
 正是基于以上的逻辑，我们通常会在Filter中做请求校验的业务。当校验通过，则继续执行下一个Filter，或者执行servlet处理请求；否则，就停止传递请求，返回错误信息给前端
