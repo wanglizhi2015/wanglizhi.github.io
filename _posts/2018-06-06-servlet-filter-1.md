@@ -38,8 +38,7 @@ public interface Filter {
 - 执行部分：当匹配到相应的请求路径时，首先会对该请求进行拦截，执行doFilter中的逻辑，若不通过则该请求则到此为止，不会继续往下执行（此时通常会进行重定向或者转发到其他地方进行处理）；若通过则继续执行下一个拦截器的doFilter方法，直到指定的过滤器都执行完doFilter后，便执行Servlet中的业务逻辑。
 
 1.初始化部分
-首先来了解下Filter的初始化流程，就拿上面自定义的MyFilter类来作为例子讲解（为了讲解源码时候排除不必要的干扰，此后的源码解析内容只针对关键部分代码进行讲解）。
-当我们定义好MyFilter类后，便开启Tomcat服务器，开始启动程序。
+首先来了解下Filter的初始化流程，当我们定义好MyFilter类后，便开启Tomcat服务器，开始启动程序。
 通过调试发现初始化Filter的入口是：StandardContext类的startInternal方法
 
 ```java
