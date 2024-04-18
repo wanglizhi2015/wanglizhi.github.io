@@ -10,7 +10,7 @@ layout: post
 ![](https://wanglizhi2015.github.io/assets/images/servlet/filter/filter-1.png)
 
 
-### 初步了解Filter接口
+## 初步了解Filter接口
 Filter是过滤器的核心接口，其中定义了初始化方法、拦截请求后的要做的具体任务方法、销毁方法
 ```java
 public interface Filter {
@@ -33,9 +33,9 @@ public interface Filter {
 
 详细的说，Filter的执行流程主要分为两个部分：
 
-初始化部分：对于定义好的Filter过滤器（例如上面自定义的MyFilter），会首先创建过滤器对象，并保存到过容器中，并调用其init方法进行初始化。
+- 初始化部分：对于定义好的Filter过滤器（例如上面自定义的MyFilter），会首先创建过滤器对象，并保存到过容器中，并调用其init方法进行初始化。
 
-执行部分：当匹配到相应的请求路径时，首先会对该请求进行拦截，执行doFilter中的逻辑，若不通过则该请求则到此为止，不会继续往下执行（此时通常会进行重定向或者转发到其他地方进行处理）；若通过则继续执行下一个拦截器的doFilter方法，直到指定的过滤器都执行完doFilter后，便执行Servlet中的业务逻辑。
+- 执行部分：当匹配到相应的请求路径时，首先会对该请求进行拦截，执行doFilter中的逻辑，若不通过则该请求则到此为止，不会继续往下执行（此时通常会进行重定向或者转发到其他地方进行处理）；若通过则继续执行下一个拦截器的doFilter方法，直到指定的过滤器都执行完doFilter后，便执行Servlet中的业务逻辑。
 
 1.初始化部分
 首先来了解下Filter的初始化流程，就拿上面自定义的MyFilter类来作为例子讲解（为了讲解源码时候排除不必要的干扰，此后的源码解析内容只针对关键部分代码进行讲解）。
@@ -265,7 +265,9 @@ public class MyFilter implements Filter {
 
 为了加深对Filter初始化部分的源码理解，送出下图
 ![](https://wanglizhi2015.github.io/assets/images/servlet/filter/filter-2.png)
-2. 执行部分
+
+2.执行部分
+
 了解完Filter的初始化，说明在后端程序中已经存在有相应的过滤器了（Tomcat自带的，我们自定义的）。那么当请求访问到达后端的时候，Filter是如何工作的？
 
 下面再来看调用Filter的方法入口StandardWrapperValve类中的invoke
@@ -483,6 +485,7 @@ public void addFilterMap(FilterMap filterMap) {
 费了一番功夫，终于把这个filterMap给搞明白了。那么，再回头看下createFilterChain方法中被我们忽视的一些细节
 
 - 获取过滤器配置对象
+
 ```java
 ApplicationFilterConfig filterConfig = (ApplicationFilterConfig) context.findFilterConfig(filterMaps[i].getFilterName()); // 说到底，还是根据过滤器名从容器中获取
 
@@ -495,7 +498,9 @@ public FilterConfig findFilterConfig(String name) {
 }
 
 ```
+
 - 添加过滤器配置对象到过滤器链中
+
 ```java
 filterChain.addFilter(filterConfig); // 添加过滤器配置对象
 
